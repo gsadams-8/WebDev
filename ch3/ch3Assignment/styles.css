@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Chapter 3 Combined Stylesheet (Checkpoints + Lab 3.2)
+   ========================================================================== */
+
+/* 1. CSS Custom Properties (Variables) */
+:root {
+  --primary-color: #1b4965;    /* Deep navy blue */
+  --secondary-color: #2b9348;  /* Forest green */
+  --accent-color: #e63946;     /* Coral red */
+  --background-color: #f8f9fa; /* Off-white */
+  --text-color: #2b2d42;       /* Charcoal */
+  --font-stack: Arial, Helvetica, sans-serif;
+}
+
+/* 2. Global Base Styles (Checkpoint 1 & Lab 3.2) */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-stack);
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* 3. Typography & Contextual Selectors (Checkpoint 2 & Lab 3.2) */
+h1 {
+  color: var(--primary-color);
+  font-size: 2.2em;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 8px;
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-size: 1.6em;
+}
+
+/* Checkpoint 2: Specific h2 inside an <article> tag */
+article h2 {
+  color: darkgreen;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* 4. Navigation & Pseudo-Classes (Checkpoint 2 & Lab 3.2) */
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+/* Checkpoint 2 & Lab 3.2: Hover effect on nav links */
+header nav a:hover,
+nav a:hover {
+  color: teal;
+  text-decoration: underline;
+}
+
+nav a:visited {
+  color: #555555;
+}
+
+/* 5. Class Selector (Lab 3.2) */
+.highlight {
+  background-color: #fff3bf;
+  border-left: 4px solid var(--accent-color);
+  padding: 10px;
+  font-style: italic;
+}
+
+/* 6. ID Selector (Lab 3.2) */
+#main-footer {
+  text-align: center;
+  font-size: 0.85em;
+  color: #666666;
+  border-top: 1px solid #cccccc;
+  margin-top: 40px;
+  padding-top: 15px;
+}
