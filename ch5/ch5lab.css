@@ -1,0 +1,91 @@
+/* Universal Box Model Reset */
+* {
+    box-sizing: border-box; /* Ensures width includes padding and border */
+}
+
+/* Page Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #2f6b73;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Main Content Box Model Container */
+.content-box {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Hobby List Styling */
+.hobby-list {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+.hobby-list li {
+    margin-bottom: 15px;
+}
+
+/* Base Hyperlink Styling */
+.hobby-list a {
+    display: inline-block;
+    padding: 8px 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none; /* Underline hidden normally */
+    transition: background-color 0.2s ease;
+}
+
+/* ---------------------------------------------------
+   LINK PSEUDO-CLASSES (In LVHA Cascade Order)
+   --------------------------------------------------- */
+
+/* 1. Unvisited Link Pseudo-Class */
+.hobby-list a:link {
+    background-color: #e3f2fd; /* Distinct light blue background */
+    color: #0d47a1;            /* Dark blue text */
+}
+
+/* 2. Visited Link Pseudo-Class */
+.hobby-list a:visited {
+    background-color: #f3e5f5; /* Distinct light purple background */
+    color: #4a148c;            /* Dark purple text */
+}
+
+/* 3. Hover Pseudo-Class */
+.hobby-list a:hover {
+    background-color: #fff3cd; /* Distinct light yellow background */
+    color: #856404;            /* Dark brown text */
+    text-decoration: underline; /* Underline appears specifically on hover */
+}
+
+/* 4. Active Link Pseudo-Class (Triggered on click) */
+.hobby-list a:active {
+    background-color: #d4edda; /* Light green background */
+    color: #155724;
+}
+
+/* Footer Area */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666666;
+    font-size: 0.9rem;
+}
