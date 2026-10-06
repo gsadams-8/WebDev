@@ -2,12 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Checkpoint 1</title>
-  <!-- The <link> tag connects your HTML document to external CSS -->
+  <title>Chapter 3 - Checkpoint 1</title>
+  <!-- Links to external stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to Chapter 3</h1>
-  <p>This paragraph is automatically styled by the external styles.css file.</p>
+  <header>
+    <h1>Chapter 3 Checkpoint 3.1</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Three Reasons to Use CSS</h2>
+      <ul>
+        <li><strong>Separation of Content:</strong> Keeps structural HTML separate from visual presentation styling.</li>
+        <li><strong>Site Maintenance:</strong> Allows global styling changes across an entire website from one central file.</li>
+        <li><strong>Greater Layout Control:</strong> Offers precise typography, spacing, alignment, and color management.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. Configuring Both Text Color and Background Color</h2>
+      <p>When changing default styles, you should always configure BOTH <code>color</code> and <code>background-color</code> together to guarantee proper visual contrast and ensure text remains readable regardless of individual browser defaults or user dark/light themes.</p>
+    </section>
+
+    <section>
+      <h2>3. Advantage of Embedded Styles over Inline Styles</h2>
+      <p>Embedded styles apply CSS rules to an entire page at once (such as all <code>&lt;h2&gt;</code> tags), eliminating the need to write repetitive <code>style="..."</code> attributes on every individual element as required with inline styles.</p>
+    </section>
+  </main>
 </body>
 </html>
