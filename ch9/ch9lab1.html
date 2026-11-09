@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Inquiry</title>
+    <link rel="stylesheet" href="ch9lab.css">
+</head>
+<body>
+    <h1>Plan Your Trip</h1>
+    <form id="inquiry" action="#" method="post" class="panel">
+        <p>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" accesskey="n" tabindex="1" required>
+        </p>
+        <p>
+            <label for="email">E-mail Address:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination">
+                <optgroup label="Europe">
+                    <option value="rome">Rome, Italy</option>
+                    <option value="paris" selected>Paris, France</option>
+                </optgroup>
+                <optgroup label="Asia">
+                    <option value="tokyo">Tokyo, Japan</option>
+                    <option value="bali">Bali, Indonesia</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <fieldset>
+            <legend>Travel style</legend>
+            <input type="radio" id="budget" name="style" value="budget" checked>
+            <label for="budget">Budget</label>
+            <input type="radio" id="comfort" name="style" value="comfort">
+            <label for="comfort">Comfort</label>
+            <input type="radio" id="luxury" name="style" value="luxury">
+            <label for="luxury">Luxury</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Extras</legend>
+            <input type="checkbox" id="pickup" name="extras" value="pickup">
+            <label for="pickup">Airport Pickup</label>
+            <input type="checkbox" id="pass" name="extras" value="pass">
+            <label for="pass">Museum Pass</label>
+            <input type="checkbox" id="insurance" name="extras" value="insurance">
+            <label for="insurance">Travel Insurance</label>
+        </fieldset>
+
+        <p>
+            <label for="comments">Questions &amp; Comments:</label>
+            <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+        </p>
+
+        <p class="buttons">
+            <input type="image" src="images/send-button.png" alt="Send your inquiry">
+        </p>
+    </form>
+
+    <footer>
+        <p>Garrett Adams | <a href="mailto:hello@globaladventures.example">hello@globaladventures.example</a></p>
+    </footer>
+</body>
+</html>

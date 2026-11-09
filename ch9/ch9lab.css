@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.panel {
+    background-color: #eaeaea;
+    padding: 15px;
+    max-width: 600px;
+    border-radius: 6px;
+}
+
+.panel label {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.panel input[type="text"],
+.panel input[type="email"],
+.panel select,
+.panel textarea {
+    width: 280px;
+    padding: 4px;
+}
+
+.panel fieldset {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fcfcfc;
+}
+
+.panel fieldset legend {
+    font-weight: bold;
+}
+
+.panel fieldset label {
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+    text-align: left;
+}
+
+.panel .buttons {
+    margin-left: 164px;
+}
+
+/* Focus styles for keyboard accessibility */
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    outline: 3px solid #2f6b73;
+    background-color: #f0f8ff;
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Lab 9.2 Additions */
+.panel input[type="url"],
+.panel input[type="number"],
+.panel input[type="date"],
+.panel input[type="color"],
+.panel input[type="range"] {
+    padding: 4px;
+}
+
+.submit-btn {
+    background-color: #2f6b73;
+    color: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #1b4965;
+}
